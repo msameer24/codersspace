@@ -1,22 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
- 
-}
 
-             /* ****************   Header Section    **************** */
+ 
+ 
+ /* **********   Header SECTION Start    **********  */
 
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
-    
+    height: 70px;
+  
 } 
 
 nav{
     display: flex ;
     gap: 20px;
+    align-items: center;
 }
 
 nav a{
@@ -24,138 +22,322 @@ nav a{
   color: black;
 }
 
+
 #logo{
   text-decoration: none;  
   color: black;
+  font-size: 35px;
   
 
 }
-nav button{
-    padding: 2px;
+
+.nav-btn {
+    padding: 8px 16px;
+    border: 1.5px solid #111;
+    border-radius: 6px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-        /* ****************   Hero Section    **************** */
-
-
-.hero {
-    min-height: 91.2vh;
-    position: relative;
-    overflow: hidden;
+.nav-btn:hover {
     background: white;
+    color: #111;
+    transform: translateY(-2px);
 }
 
 
-.hero-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 65%;
-    height: 100%;
-    background-image: url("images/white.png");
-    background-size: cover;
-    background-position: center;
+nav a:hover{
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+   
 }
 
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    width: 90%;
-    /* max-width: 1200px; */
-    margin:0 auto;
-    padding-top: 200px;
 
-}
+ /* **********   Header SECTION End    **********  */
+ 
 
-.hero-content h1 {
-    font-size: 50px;
-    /* max-width: 300px; */
-}
+ 
+ /* **********   Hero SECTION Start    **********  */
 
-.hero-content span {
-    font-family: monospace;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+        .hero{
+            height: 89vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* gap: 50px; */
+            background-color: rgba(237, 234, 234, 0.37);
+            
+        }
+        
 
-    width: 0;
-    border-right: 2px solid;
-
-    background: linear-gradient(
-        to right,
-        #fd2020,
-        #0ec63c
-
-    );
-
-    /* -webkit-background-clip: text; */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation:
-        typing 3s steps(30) forwards,
-        blink 1s step-end infinite;
-}
+        .hero-content{
+            width: 500px;
+            
+        }
+  
+        .hero-img img{
+            height: 600px;
+             filter: drop-shadow(10px 10px 20px black);
+         
+        }
+      
+        
+        h1{
+            font-size: 60px;
+            line-height: 1;
+     
+        }
 
 
+     .hero-content h1 span{
+             background: linear-gradient(
+                        to right,
+                            #0091ff,
+                             #ff0000    ); 
+             -webkit-background-clip: text; 
+              background-clip: text;
+              -webkit-text-fill-color: transparent; 
+
+        }
+
+
+        .hero-content p{
+            margin-bottom: 30px;
+            font-size: 18px;
+         }
+
+        
+        .hero-btn{
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+        }
+
+
+        .hero-btn button{
+           border-radius: 10px;
+            width: 150px;
+            height: 40px;
+             padding: 10px;
+        }
+
+
+         .hero-btn1{
+            background-color: #31BAC7;
+            border: none;
+            color: white;
+          font-weight: 700;
+            
+         }
+
+
+          .hero-btn2{
+            background-color:transparent;
+            border: 3px solid #31BAC7;
+             font-weight: 700;
+        
+         }
+
+         .hero-btn1:hover{
+            cursor: pointer;
+             transition: all 0.3s ease;
+             transform: translateY(-2px);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+         
+         } 
+
+
+
+         .hero-btn2:hover{
+            cursor: pointer;
+             transition: all 0.3s ease;
+             transform: translateY(-2px);
+             box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+         
+            }
+    
+         /* **********   Hero SECTION End    **********  */
+
+
+
+     /* **********   Icone Topic SECTION Start    **********  */
+
+
+         .fa-book-open, .fa-rocket, .fa-code, .fa-fire{
+          font-size: 40px;
+          color: white;
+         }
+
+         
+         .topic{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+           
+         }
+
+
+
+         .topics-done{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid #bda9a978; 
+            border-radius: 10px;
+            margin-bottom: 30px;
+             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+         }
+
+
+
+         .topic-content h2 {
+            margin: 0;
+        }
+
+
+
+        .topic-content p {
+            margin: 0;
+        }
+
+
+         .topic-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+             height: 70px;
+            width:  70px;
+         }
 
     
-.hero-content p {
-    max-width: 500px;
-    line-height: 1.6;
-}
+         .topics-done{
+            height: 200px;
+            margin-bottom: 50px;
+            
+         }
 
 
-.hero-image::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(
-        to right,
-        white 0%,
-        white 15%,
-        rgba(255, 255, 255, 0.8) 35%,
-        rgba(255, 255, 255, 0.3) 55%,
-        transparent 75%
-    );
-}
-
-
-
+ /* **********   Icon Topic SECTION End    **********  */
  
-  
 
 
+ /* **********   Footer SECTION Start    **********  */
 
-@keyframes typing {
-    from {
-        width: 0%;
+         .footer-main{
+            height: 300px;
+            border: 2px solid rgba(203, 188, 188, 0.721);
+            display: flex;
+            border-radius: 10px;
+    
+         }
 
-    }
-    to {
-        width: 32ch;
-    }
-}
+         .footer-logo , .footer-links{
+           
+            width: 50%;
+         }
 
-@keyframes blink  {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
+         .footer-logo {
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
 
 
-        /* ****************   About  Section    **************** */
+         .footer-logo img{
+            height: 300px;
+           
+          
+         }
+
+         .footer-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            gap: 20px;
+            
+            
+         }
+
+ /* **********   Footer SECTION Start    **********  */
 
 
-.aboutsection{
+ /* **********   Cards SECTION Start    **********  */
+
+
+.all-card-section{
+    height: 500px;
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    border: 1px solid #9b7e7e;
-    height: 50px;
-    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
 }
- 
+
+
+
+.card {
+    border: 2px solid rgba(128, 0, 128, 0.422);
+    height: 350px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+    .card-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 50px; */
+}
+
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card-content{
+    text-align: center;
+}
+
+
+.card-btn {
+    padding: 8px 16px;
+    width: 120px;
+    border: 1.5px solid #111;
+    border-radius: 6px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.card-btn:hover {
+    background: white;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+
+
+.card-content h2{
+    font-size: 30px;
+        margin: 10px 0 20px;
+}
+
+
+ /* **********   4 Card SECTION End    **********  */
