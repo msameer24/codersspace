@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Projects</title>
-    <!-- <link rel="stylesheet" href="../style.css"> -->
+  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
@@ -31,11 +31,10 @@
 }
 
 .card-image {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+
      
 }
 
@@ -43,18 +42,14 @@
 
 .card-image img {
     width: 100%;
-     height: 150px;
-     border: 2px solid transparent;
-  position: relative;
-  top: 20px;
-     /* border-radius: 50%; */
-  background: 
-    linear-gradient(white, white) padding-box, 
-    linear-gradient(to right, #ff4e50, #40c0cb) border-box;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    top: 20px;
+   
 
 }
-
-
 
 
 .card-content{
@@ -113,80 +108,218 @@ h1{
 </head>
 <body>
 
-<div class="maincontainer">
-    <h1 >Projects</h1>
-    
-</div>
 
-
-<!-- new card -->
-
-<!-- 
-<div class="card-container">
-
-
-     <div class="card"> 
-        <div class="card-image">
-            <img class="image-card" src="../images/1093037772045737504.jpg" alt="">
-        </div>
-        <div class="card-content">
-            <h2>Project</h2>
-            <p>Explore The Project to recreate it by yourself.</p>
-            <div class="btns">
-            <button class="card-btn">Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></button>
-            <button class="card-btn">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></button>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="card"> 
-        <div class="card-image">
-            <img class="image-card" src="../images/1093037772045737504.jpg" alt="">
-        </div>
-        <div class="card-content">
-            <h2>Project</h2>
-            <p>Explore The Project to recreate it by yourself. </p>
-            <div class="btns">
-            <button class="card-btn">Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></button>
-            <button class="card-btn">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></button>
-            </div>
-        </div>
-    </div>
-
-
-
-</div>
-     -->
+  <h1>Projects</h1>
 
 
 <div class="card-container">
 
+<!-- card  1 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/coin-flip.png"
+         alt="">
+        </div>
 
-     <div class="card">
-  <div class="card-image">
-    <img src="../images/1093037772045737504.jpg"
-         alt="Random Number Generator project preview">
-  </div>
+     <div class="card-content">
+         <h2>Coin Flip</h2>
+         <p>A beginner JavaScript project that generates Heads or tails to toss.</p>
 
-  <div class="card-content">
-    <h2>Random Number Generator</h2>
-    <p>A beginner JavaScript project that generates random numbers.</p>
-
-    <div class="btns">
-      <a class="card-btn" href="https://randomnumbergenerator24.netlify.app/">
-        Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i>
-      
-       
-      </a>
-
-      <a class="card-btn"
-         href="https://github.com/msameer24/Js-Projects/tree/main/random-number-generator"> 
-        Source Code <i class="fa-brands fa-github" style="color: #000000;"></i>
-      </a>
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/coin-flip/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/coin-flip">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
     </div>
-  </div>
 </div>
+
+<!-- card 2 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/dice-roll.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Dice Roll</h2>
+         <p>A beginner JavaScript project that roll a dice and show the number.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/dice-role/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/dice-role">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 3 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/even-odd.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Even Odd Checker</h2>
+         <p>A beginner JavaScript project that check number is even or odd.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/even-odd-checker/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/even-odd-checker">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 4 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/number-guessing.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Random Number Guessing</h2>
+         <p>A beginner JavaScript project for guessing number.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/number-guessing/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/number-guessing">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+<!-- card 5 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/pal.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Palindrome Checker</h2>
+         <p>A beginner JavaScript project that is a Palindrome Checker.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/palindrome-checker/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/palindrome-checker">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 6 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/prime-number.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Prime Number Checker</h2>
+         <p>A beginner JavaScript project that check the number is prime or not.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/prime-number-checker/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/prime-number-checker">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 7 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/randome-color.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Random Background Color Generator</h2>
+         <p>A beginner JavaScript project that Generator Random Background Color.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/random-color/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/random-color">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 8 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/random-number.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Random Number Generator</h2>
+         <p>A beginner JavaScript project that Generator Random Number.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/random-number-generator/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/random-number-generator">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+<!-- card 9 -->
+<div class="card">
+        <div class="card-image">
+             <img src="../images/random-quote.png"
+         alt="">
+        </div>
+
+     <div class="card-content">
+         <h2>Random Quote Generator</h2>
+         <p>A beginner JavaScript project that Generator Random Quote.</p>
+
+         <div class="btns">
+             <a class="card-btn" href="https://msameer24.github.io/Js-Projects/random-quote-generator/index.html"> Live Demo <i class="fa-solid fa-up-right-from-square" style="color: #000000;"></i></a>
+             <a class="card-btn" href="https://github.com/msameer24/Js-Projects/tree/main/random-quote-generator">Source Code <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+         </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
